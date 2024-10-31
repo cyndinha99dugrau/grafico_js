@@ -25,18 +25,30 @@
                         const container = document.querySelector('#chart')
                         const data = new google.visualization.arrayToDataTable([
                             ['Personagens', 'Vezes'],
-                            ['Mahiro', '1'],
-                            ['Mihari', '2'],
-                            ['Miyo', '1'],
-                            ['Kaede', '10'],
-                            ['Momiji', '0']
+                            ['Naruto', '1'],
+                            ['Hinata', '2'],
+                            ['Sakura', '1'],
+                            ['Sasuke', '10'],
+                            ['Jiraya', '0']
                         ])
+                        const options = {
+                        title: 'Naruto',
+                        height: 400,
+                        width: 720
                     }
-                    </script>
+        
+                    const chart = new google.visualization.ColumnChart(container)
+                    // const chart = new google.visualization.BarChart(container)
+                    // const chart = new google.visualization.LineChart(container)
+                    // const chart = new google.visualization.PieChart(container)
+                    chart.draw(data, options)
+                }
+            </script>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por Kazz02um</p>
+        <p>Desenvolvido por Cyndi</p>
     </footer>
 </body>
 </html>
